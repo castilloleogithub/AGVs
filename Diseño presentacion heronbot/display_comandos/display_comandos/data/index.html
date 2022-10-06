@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Heron-Bot WebServer Control</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="forklift.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="topnav">
+    <h1>Heron-Bot WebServer Control </h1>
+  </div>
+
+
+
+  <div class="content">
+    <form action="/" method="POST">
+
+      <div class="seteo">
+        <div class="comandos">
+          <input type="hidden" name="comando" value="COM">
+          <label for="contenido">Consola de comandos:</label><br>
+          <input type="text" name="contenido" >
+
+        </div>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+
+
+  <div class="content">
+    <form action="/" method="POST">
+
+      <div class="seteo">
+        <div class="desplazamiento">
+
+          <input type="hidden" name="comando" value="ADV">
+
+          <label for="valor">Desplazamiento:</label><br>
+          <input type="number" name="valor">
+
+
+          <input type="radio" name="modo" value="REL" checked>
+          <label for="REL">Relativo</label>
+
+          <input type="radio" name="modo" value="ABS">
+          <label for="REL">Absoluto</label><br><br><br>
+
+
+        </div>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+
+
+
+  <div class="content">
+    <form action="/" method="POST">
+
+      <div class="seteo">
+        <div class="rotacion">
+          <input type="hidden" name="comando" value="ROT">
+
+          <label for="valor">Rotación:</label><br>
+          <input type="number" name="valor">
+
+
+          <input type="radio" name="modo" value="REL" checked>
+          <label for="REL">Relativo</label>
+
+          <input type="radio" name="modo" value="ABS">
+          <label for="REL">Absoluto</label><br><br><br>
+        </div>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+
+
+
+  <div class="content">
+    <form action="/" method="POST">
+
+      <div class="seteo">
+        <div class="actuador">
+          <input type="hidden" name="comando" value="ACC">
+
+          <label for="valor">Actuador:</label><br>
+          <input type="number" name="valor">
+
+
+          <input type="radio" name="modo" value="REL" checked>
+          <label for="REL">Relativo</label>
+
+          <input type="radio" name="modo" value="ABS">
+          <label for="REL">Absoluto</label><br><br><br>
+        </div>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+
+
+</body>
+</html>
